@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="main.css">
+</head> 
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Oras" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="error">
+            <p>Numele orașului nu este corect</p>
+        </div>
+        <div class="weather">
+            <div class="main_details">
+                <h2 class="city">New York</h2>
+                <h2 class="day">It's a nice day!</h2>
+                <h3 class="clothes">Nu uita ochelarii de soare!</h3>
+                <div class="container_coloane">
+                    <div class="col">
+                        <div class="rise_set">
+                            <div class="rise">
+                                <img src="images/sunrise.png" class="sunrise-icon">
+                                <p class="rise_hour"> Ora 6:32 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/rain.png" class="weather-icon">
+                        <h3 class="description">Clear sky</h3>
+                        <h1 class="tempC">22°C</h1>
+                        <h1 class="tempF">22°F</h1>
+                    </div>
+                    <div class="col">
+                        <div class="rise_set">
+                        <div class="set">
+                            <img src="images/sunset.png" class="sunset-icon">
+                            <p class="set_hour"> Ora 20:13 </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="humidity">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p>Umiditate</p>
+                        <p class="h_lvl">50</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="images/wind.png">
+                    <div>
+                        <p>Viteza vantului</p>
+                        <p class="w_speed">20 km/h</p>
+                    </div>
+                    
+                    <div class="direction">
+                        <p>Dinspre:</p>
+                        <img src="images/compasNE.png" class="compas">
+                        <p class="d_d">NE</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="/main.js"></script>
+</body>
+</html>
